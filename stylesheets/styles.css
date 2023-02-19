@@ -1,179 +1,217 @@
 * {
-  /* border: solid 1px blue; */
+  border: solid 1px grey;
   /* background-color: rgb(224, 230, 164); */
 }
 
-header {
-  position: sticky;
+body {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.top {
   top: 0;
   background-color: white;
-  border-bottom: solid 1px black;
-  text-align: center;
-  /* padding: 10px; */
+  text-align: left;
+}
+
+.name {
+  font-size: 28px;
+  margin: 0;
+}
+
+.position {
+  font-size: 16px;
+  color: rgb(116, 111, 111);
+}
+
+.menu-icon {
+  /* width: 40px; */
+  height: 44px;
+  position: relative;
+  display: flex;
+}
+
+.X-icon:active {
+  visibility: visible;
+}
+
+.menu-icon:active {
+  visibility: hidden;
+}
+
+.X-icon {
+  height: 44px;
+  position: absolute;
+  display: flex;
+  right: 15px;
+  visibility: hidden;
   z-index: 2;
 }
 
-.category {
-  text-align: center;
-  padding: 5px;
-}
-
-.school {
-  text-align: center;
-  padding: 5px;
-}
-
-.description {
-}
-
-.highlights {
-}
-
-.work {
-  text-align: center;
-}
-
-.role {
-  text-align: center;
-  padding: 5px;
-}
-
 .container {
-  position: relative;
-  left: 24vw;
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
 }
 
 li {
   padding: 5px;
 }
 
-.detailed-description {
+.projects-container {
+  height: 100vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
   padding: 5px;
 }
 
-.dates {
-  text-align: center;
+.oyster,
+.lobster {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
 }
 
-.value {
-  text-align: center;
-  padding: 20px;
-}
-
-.contacts {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-}
-
-.number {
-  width: 50px;
-  position: relative;
-  display: flex;
-}
-
-.number-sidebar {
-  position: absolute;
-  left: 100%;
-  display: flex;
-  justify-content: left;
-  align-content: left;
-  align-items: center;
-  height: 100%;
-  width: max-content;
-  padding-left: 30%;
+aside {
   visibility: hidden;
-  flex-wrap: wrap;
-  padding-right: 30%;
 }
 
-.number:hover .number-sidebar,
-.number:focus-within .number-sidebar {
-  visibility: visible;
-}
+@media screen and (min-width: 900px) {
+  aside {
+    visibility: visible;
+  }
 
-.email {
-  width: 50px;
-  margin-top: 15px;
-  position: relative;
-  display: flex;
-}
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background-color: white;
+  }
 
-.email-sidebar {
-  position: absolute;
-  left: 100%;
-  display: flex;
-  justify-content: left;
-  align-content: left;
-  align-items: center;
-  height: 100%;
-  width: max-content;
-  padding-left: 30%;
-  visibility: hidden;
-  flex-wrap: wrap;
-  padding-right: 30%;
-}
+  .number {
+    width: 50px;
+    position: relative;
+    display: flex;
+  }
 
-.email:hover .email-sidebar,
-.email:focus-within .email-sidebar {
-  visibility: visible;
-}
+  .number-sidebar {
+    position: absolute;
+    left: 100%;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    padding-left: 30%;
+    visibility: hidden;
+    flex-wrap: wrap;
+    padding-right: 30%;
+  }
 
-.linkedin {
-  width: 50px;
-  margin-top: 15px;
-  position: relative;
-  display: flex;
-}
+  .number:hover .number-sidebar,
+  .number:focus-within .number-sidebar {
+    visibility: visible;
+  }
 
-.linkedin-sidebar {
-  position: absolute;
-  left: 100%;
-  display: flex;
-  justify-content: left;
-  align-content: left;
-  align-items: center;
-  height: 100%;
-  width: max-content;
-  padding-left: 30%;
-  visibility: hidden;
-  flex-wrap: wrap;
-  padding-right: 30%;
-}
+  .email {
+    width: 50px;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+  }
 
-.linkedin:hover .linkedin-sidebar,
-.linkedin:focus-within .linkedin-sidebar {
-  visibility: visible;
-}
+  .email-sidebar {
+    position: absolute;
+    left: 100%;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    padding-left: 30%;
+    visibility: hidden;
+    flex-wrap: wrap;
+    padding-right: 30%;
+  }
 
-.github {
-  width: 50px;
-  margin-top: 15px;
-  position: relative;
-  display: flex;
-}
+  .email:hover .email-sidebar,
+  .email:focus-within .email-sidebar {
+    visibility: visible;
+  }
 
-.github-sidebar {
-  position: absolute;
-  left: 100%;
-  display: flex;
-  justify-content: left;
-  align-content: left;
-  align-items: center;
-  height: 100%;
-  width: max-content;
-  padding-left: 30%;
-  visibility: hidden;
-  flex-wrap: wrap;
-  padding-right: 30%;
-}
+  .linkedin {
+    width: 50px;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+  }
 
-.github:hover .github-sidebar,
-.github:focus-within .github-sidebar {
-  visibility: visible;
+  .linkedin-sidebar {
+    position: absolute;
+    left: 100%;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    padding-left: 30%;
+    visibility: hidden;
+    flex-wrap: wrap;
+    padding-right: 30%;
+  }
+
+  .linkedin:hover .linkedin-sidebar,
+  .linkedin:focus-within .linkedin-sidebar {
+    visibility: visible;
+  }
+
+  .github {
+    width: 50px;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+  }
+
+  .github-sidebar {
+    position: absolute;
+    left: 100%;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    padding-left: 30%;
+    visibility: hidden;
+    flex-wrap: wrap;
+    padding-right: 30%;
+  }
+
+  .github:hover .github-sidebar,
+  .github:focus-within .github-sidebar {
+    visibility: visible;
+  }
 }

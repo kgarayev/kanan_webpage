@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Merriweather:wght@300&display=swap");
 * {
   border: solid 1px grey;
   /* background-color: rgb(224, 230, 164); */
+  margin: 0;
+  padding: 0;
+  font-family: "Gloock", serif;
+  font-family: "Merriweather", serif;
 }
 
 body {
@@ -10,6 +15,35 @@ body {
   flex-direction: column;
 }
 
+@media screen and (min-width: 900px) {
+  header,
+  main {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu-icon {
+    visibility: hidden;
+  }
+
+  .menu-item {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-container {
+    flex-direction: row;
+  }
+
+  .project {
+    max-width: 50%;
+  }
+}
+
+/* top bit of the webpage */
+
 .top {
   top: 0;
   background-color: white;
@@ -17,13 +51,20 @@ body {
 }
 
 .name {
-  font-size: 28px;
+  font-size: 1.7em;
   margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  visibility: hidden;
 }
 
 .position {
-  font-size: 16px;
+  font-size: 1em;
   color: rgb(116, 111, 111);
+  padding: 0;
+  margin: 0;
 }
 
 .menu-icon {
@@ -56,14 +97,96 @@ body {
   margin: 5px;
 }
 
-li {
-  padding: 5px;
-}
+/* projects section of the webpage */
 
 .projects-container {
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+.container-heading {
+  margin-block-end: 0;
+  margin-top: 0;
+  padding: 4px;
+}
+
+.project {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f7ec;
+  flex-direction: column;
+}
+
+.project-description {
+  height: 70%;
+}
+
+.project-highlights {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 15%;
+}
+
+/* button-related stuff */
+.project-button {
+  height: 15%;
+}
+
+.project-link {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #f55050;
+  border: none;
+  /* border-radius: 8px; */
+  color: white;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin: 2px;
+  transition: all 0.5s;
+  width: 200px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* all the footer stuff */
 footer {
   display: flex;
   flex-direction: column;
@@ -88,6 +211,7 @@ footer {
   margin: 2px;
 }
 
+/* contacts & social media sidebar */
 aside {
   visibility: hidden;
 }
@@ -127,6 +251,7 @@ aside {
     visibility: hidden;
     flex-wrap: wrap;
     padding-right: 30%;
+    background-color: white;
   }
 
   .number:hover .number-sidebar,
@@ -154,6 +279,7 @@ aside {
     visibility: hidden;
     flex-wrap: wrap;
     padding-right: 30%;
+    background-color: white;
   }
 
   .email:hover .email-sidebar,
@@ -181,6 +307,7 @@ aside {
     visibility: hidden;
     flex-wrap: wrap;
     padding-right: 30%;
+    background-color: white;
   }
 
   .linkedin:hover .linkedin-sidebar,
@@ -208,6 +335,7 @@ aside {
     visibility: hidden;
     flex-wrap: wrap;
     padding-right: 30%;
+    background-color: white;
   }
 
   .github:hover .github-sidebar,

@@ -1,0 +1,179 @@
+* {
+  /* border: solid 1px blue; */
+  /* background-color: rgb(224, 230, 164); */
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: solid 1px black;
+  text-align: center;
+  /* padding: 10px; */
+  z-index: 2;
+}
+
+.category {
+  text-align: center;
+  padding: 5px;
+}
+
+.school {
+  text-align: center;
+  padding: 5px;
+}
+
+.description {
+}
+
+.highlights {
+}
+
+.work {
+  text-align: center;
+}
+
+.role {
+  text-align: center;
+  padding: 5px;
+}
+
+.container {
+  position: relative;
+  left: 24vw;
+  width: 50%;
+}
+
+li {
+  padding: 5px;
+}
+
+.detailed-description {
+  padding: 5px;
+}
+
+.dates {
+  text-align: center;
+}
+
+.value {
+  text-align: center;
+  padding: 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.number {
+  width: 50px;
+  position: relative;
+  display: flex;
+}
+
+.number-sidebar {
+  position: absolute;
+  left: 100%;
+  display: flex;
+  justify-content: left;
+  align-content: left;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  padding-left: 30%;
+  visibility: hidden;
+  flex-wrap: wrap;
+  padding-right: 30%;
+}
+
+.number:hover .number-sidebar,
+.number:focus-within .number-sidebar {
+  visibility: visible;
+}
+
+.email {
+  width: 50px;
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+}
+
+.email-sidebar {
+  position: absolute;
+  left: 100%;
+  display: flex;
+  justify-content: left;
+  align-content: left;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  padding-left: 30%;
+  visibility: hidden;
+  flex-wrap: wrap;
+  padding-right: 30%;
+}
+
+.email:hover .email-sidebar,
+.email:focus-within .email-sidebar {
+  visibility: visible;
+}
+
+.linkedin {
+  width: 50px;
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+}
+
+.linkedin-sidebar {
+  position: absolute;
+  left: 100%;
+  display: flex;
+  justify-content: left;
+  align-content: left;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  padding-left: 30%;
+  visibility: hidden;
+  flex-wrap: wrap;
+  padding-right: 30%;
+}
+
+.linkedin:hover .linkedin-sidebar,
+.linkedin:focus-within .linkedin-sidebar {
+  visibility: visible;
+}
+
+.github {
+  width: 50px;
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+}
+
+.github-sidebar {
+  position: absolute;
+  left: 100%;
+  display: flex;
+  justify-content: left;
+  align-content: left;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  padding-left: 30%;
+  visibility: hidden;
+  flex-wrap: wrap;
+  padding-right: 30%;
+}
+
+.github:hover .github-sidebar,
+.github:focus-within .github-sidebar {
+  visibility: visible;
+}

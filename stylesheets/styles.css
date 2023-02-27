@@ -173,7 +173,7 @@ li {
 }
 
 .project-heading {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .project-description {
@@ -218,7 +218,7 @@ li {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin-top: 0.2rem;
   transition: all 0.5s;
   width: 10rem;

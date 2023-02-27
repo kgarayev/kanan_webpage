@@ -35,15 +35,34 @@
   </head>
   <body>
     <!-- top bit of the webpage -->
+    <!-- top bit of the webpage -->
     <header>
       <div class="top">
         <div class="container">
           <div class="introduction">
             <h1 class="name">Kanan Garayev</h1>
-            <div class="navigation">
-              <div class="placeholder">empty</div>
-              <h4 class="menu-item"><a href="index.html">projects</a></h4>
-              <h4 class="menu-item"><a href="about.html">about</a></h4>
+            <div class="menu" tabindex="0">
+              <a href="#">
+                <img
+                  class="burger-icon"
+                  src="./images/burger-menu.svg"
+                  alt="burger-menu-icon"
+              /></a>
+
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="./index.html">projects</a></li>
+                  <li><a href="./about.html">about</a></li>
+                  <li><a href="./about.html">contact</a></li>
+                  <li class="sub-sub-menu" tabindex="0">
+                    <a href="#">more</a>
+                    <ul>
+                      <li><a href="#">resume</a></li>
+                      <li><a href="#">theceng.co.uk</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 

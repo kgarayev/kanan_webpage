@@ -173,12 +173,12 @@ li {
 }
 
 .project-heading {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .project-description {
   height: 60%;
-  font-size: 1rem;
+  font-size: 0.75rem;
   margin-top: 1rem;
   text-align: justify;
   text-justify: inter-word;

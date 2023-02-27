@@ -12,7 +12,7 @@
 }
 
 .container-heading {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .about-photo {
@@ -21,7 +21,7 @@
 }
 
 .about-description {
-  font-size: 1rem;
+  font-size: 0.75rem;
   margin-top: 1rem;
   text-align: justify;
   text-justify: inter-word;

@@ -45,6 +45,29 @@ body {
   padding-right: 0.25rem;
   padding-top: 0;
   margin-top: 0;
+  animation: fontalicious 4s infinite;
+}
+
+@keyframes fontalicious {
+  0% {
+    font-family: "Poppins", sans-serif;
+  }
+
+  25% {
+    font-family: times;
+  }
+
+  50% {
+    font-family: OCR A Std, monospace;
+  }
+
+  75% {
+    font-family: Tahoma;
+  }
+
+  99% {
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 /* menu stuff only below */
